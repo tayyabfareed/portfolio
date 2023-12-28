@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind utilities;
+
+:root {
+    --text-color-primary: #2F3349;
+    --text-color-secondary: #54595F;
+    --border-light: rgba(0,0,0,0.1);
+}
+
+html,
+body {
+    font-family: 'Lexend Deca';
+    color: var(--text-color-primary);
+}
+
+body * {
+    border-color: var(--text-color-primary);
+}
+
+.color-secondary {
+    color: var(--text-color-secondary);
+}
