@@ -1,17 +1,28 @@
-# build environment
-FROM node:18.19.0 as builder
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-COPY . /usr/src/app
+# Stage 1: Compile and Build angular codebase
+
+# Use official node image as the base image
+FROM node:latest as build
+
+# Set the working directory
+WORKDIR /usr/local/app
+
+# Add the source code to app
+COPY ./ /usr/local/app/
+
+# Install all the dependencies
 RUN npm install
+
+# Generate the build of the application
 RUN npm run build
 
-# production environment
-FROM nginx:1.25.3-alpine
-RUN rm -rf /etc/nginx/conf.d
-RUN mkdir -p /etc/nginx/conf.d
-COPY ./default.conf /etc/nginx/conf.d/
-COPY --from=builder /usr/src/app/dist/angular-17/browser /usr/share/nginx/html
+
+# Stage 2: Serve app with nginx server
+
+# Use official nginx image as the base image
+FROM nginx:latest
+
+# Copy the build output to replace the default nginx contents.
+COPY --from=build /usr/local/app/dist/angular-17 /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
