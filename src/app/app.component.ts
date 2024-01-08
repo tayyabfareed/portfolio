@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
 
+
   tabs = [
     {
       title: 'Intro',
@@ -212,7 +213,7 @@ export class AppComponent implements OnInit {
     }
   ];
   ngOnInit(): void {
-
+    console.log('ng onnint')
   }
 
 }
