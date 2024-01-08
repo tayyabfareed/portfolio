@@ -12,6 +12,6 @@ FROM nginx:1.25.3-alpine
 RUN rm -rf /etc/nginx/conf.d
 RUN mkdir -p /etc/nginx/conf.d
 COPY ./default.conf /etc/nginx/conf.d/
-COPY --from=builder /usr/src/app/dist/angular-17 /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/angular-17/browser /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
