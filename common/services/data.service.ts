@@ -214,7 +214,7 @@ export class DataService {
             logo:'assets/images/projects/higher.png',
             title:'Higher',
             description:'Finding the right people for each position is key to the overall growth of your organization as wrong hires will have negative impacts. Higher is an online platform that tackles challenges faced by recruiters, interviewers, and managers during the recruitment process.',
-            url:'https://stemexe.com'
+            url:'https://higher.exceeders.com'
         },
         {
             logo:'assets/images/projects/esp.jpg',
