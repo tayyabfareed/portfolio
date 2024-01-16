@@ -217,7 +217,7 @@ export class DataService {
             url:'https://higher.exceeders.com'
         },
         {
-            logo:'assets/images/projects/esp.jpg',
+            logo:'assets/images/projects/esp.png',
             title:'ESP',
             description:'Automation of business processes that involve processing of applications requires enhanced and secure approval validations. With ESP’s digital approval feature using ID verification and Face Recognition, companies are guaranteed that their business critical processes are handled securely and by the right channels.',
             url:'https://esp.exceeders.com'

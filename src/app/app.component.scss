@@ -27,3 +27,15 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+
+
+.required{
+    position: relative;
+    &::after{
+        content: '*';
+        position: absolute;
+        inset-inline-end: -12px;
+        color: tomato;
+    }
+}
