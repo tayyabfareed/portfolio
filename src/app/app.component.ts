@@ -1,9 +1,9 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { Component, DestroyRef, OnInit, inject } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { DataService } from '../../common/services/data.service';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { delay, finalize, of, tap } from 'rxjs';
+import { DataService } from '../../common/services/data.service';
 @Component({
   selector: 'codevty',
   standalone: true,
@@ -25,7 +25,7 @@ export class AppComponent {
     'phone': new FormControl(''),
     'message': new FormControl('', [Validators.required]),
   })
-  
+
   submitting = false;
   successMessage = '';
 
