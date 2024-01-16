@@ -50,9 +50,9 @@
       <header>
         <h2 class="text-[2.5rem] leading-tight text-center">Technologies in my ever growing toolkit</h2>
       </header>
-      <div class="flex flex-wrap mt-5">
+      <div class="grid custom-grid mt-5">
         @for (skill of skills; track $index) {
-        <div class=" p-4 flex items-center justify-center tooltip">
+        <div class=" p-4 flex items-center justify-center tooltip width-[80px]">
           <p class="tooltiptext shadow-2xl text-sm"><span
               class="text-lg">{{skill.title}}</span><br>{{skill.description}}</p>
           <a [href]="skill.url" target="_blank" [ariaLabel]="skill.title" [ariaDescription]="skill.description">
@@ -61,8 +61,6 @@
 
         </div>
         }
-
-
       </div>
     </div>
   </section>
