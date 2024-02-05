@@ -38,8 +38,8 @@
         </a>
       </div>
       <div class="flex-1 md:-mb-16 order-1">
-        <img class="mx-auto" height="520" width="356" ngSrc="assets/images/tayyab-codevty.jpg"
-          alt="tayyab fareed photo" priority="high">
+        <img class="mx-auto" height="520" width="356" ngSrc="assets/images/tayyab-codevty.jpg" alt="tayyab fareed photo"
+          priority="high">
 
       </div>
     </div>
@@ -52,7 +52,7 @@
       </header>
       <div class="grid custom-grid mt-5">
         @for (skill of skills; track $index) {
-        <div class=" p-4 flex items-center justify-center tooltip width-[80px]">
+        <div class="flex items-center justify-center tooltip">
           <p class="tooltiptext shadow-2xl text-sm"><span
               class="text-lg">{{skill.title}}</span><br>{{skill.description}}</p>
           <a [href]="skill.url" target="_blank" [ariaLabel]="skill.title" [ariaDescription]="skill.description">
@@ -68,7 +68,8 @@
   <section id="about" class="px-5 py-[5rem] bg-[#F7F9F4] scroll-mt-[6rem]">
     <div class="mx-auto max-w-[1170px] flex gap-12 flex-col sm:flex-row">
       <div class="flex-1">
-        <img class="mx-auto" height="494" width="494" ngSrc="assets/images/tayyab-codevty.jpg" alt="tayyab fareed photo" priority="high">
+        <img class="mx-auto" height="494" width="494" ngSrc="assets/images/tayyab-codevty.jpg" alt="tayyab fareed photo"
+          priority="high">
 
       </div>
       <div class="flex-1 pt-8">
@@ -91,8 +92,7 @@
       <h2 class="text-[2.5rem] leading-tight text-center mb-10">Some of my projects</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         @for (project of projects; track $index) {
-        <article 
-          class="flex flex-col items-center justify-center gap-5 p-16 bg-[#E6EBE4]">
+        <article class="flex flex-col items-center justify-center gap-5 p-16 bg-[#E6EBE4]">
           <img width="100" height="82" class="mx-auto h-[4.5rem] w-auto" [ngSrc]="project.logo" [alt]="project.title">
           <h3 class="text-[1.4rem] font-medium leading-tight text-center">{{project.title}}</h3>
           <p class="leading-loose  text-center">{{project.description}}</p>
@@ -126,7 +126,7 @@
     </div>
   </section> -->
   <!-- contact -->
-  <section id="contact" class="p-[1.5rem] sm:p-[2rem] md:p-[5.5rem] max-h-[100vh] bg-[#FEF3DF] scroll-mt-[6rem]">
+  <section id="contact" class="p-[1.5rem] sm:p-[2rem] md:p-[5.5rem]  bg-[#FEF3DF] scroll-mt-[6rem]">
     <div class="mx-auto max-w-[1170px] flex gap-10 flex-col sm:flex-row">
       <div class="flex-auto">
         <h2 class="text-xl font-semibold mb-4">Let's get in touch</h2>
@@ -136,12 +136,36 @@
           <div class="flex flex-col gap-5">
             <div class="flex gap-3">
               <div><i class="fas fa-envelope text-xl"></i></div>
-              <div><a href="mailto:to.tayyabfareed@gmail.com"
+              <div><a href="mailto:to.tayyabfareed@gmail.com" target="_blank"
                   class="text-lg font-light">{{'to.tayyabfareed@gmail.com'}}</a></div>
             </div>
             <div class="flex gap-3">
               <div><i class="fas fa-phone text-xl"></i></div>
-              <div><a href="tel:+923145567657" class="text-lg  font-light">{{'+923145567657'}}</a></div>
+              <div><a href="tel:+923145567657" target="_blank" class="text-lg  font-light">{{'+923145567657'}}</a></div>
+            </div>
+            <div class="flex gap-3">
+              <div><i class="fa-brands fa-linkedin text-xl"></i></div>
+              <div><a href="https://www.linkedin.com/in/tayyab-fareed-7a3b71177/" target="_blank"
+                  class="text-lg  font-light">tayyab-fareed-7a3b71177</a></div>
+            </div>
+            <div class="flex gap-3">
+              <div><i class="fa-brands fa-github text-xl"></i></div>
+              <div><a href="https://github.com/tayyabfareed" target="_blank"
+                  class="text-lg  font-light">https://github.com/tayyabfareed</a></div>
+            </div>
+            <div class="flex gap-3">
+              <div>
+                <a type="button" href="https://tayyabfareed.github.io" target="_blank"
+                  class="px-4 py-3 font-bold bg-transparent border border-solid  text-[#073E29] hover:text-white hover:bg-[#073E29] border-[#073E29] transition-all mt-auto">
+                  View Résumé
+                </a>
+              </div>
+              <div>
+                <a type="button" href="assets/tayyab-fareed-cv.pdf" target="_blank" download="tayyab-fareed-cv.pdf"
+                  class="px-4 py-3 font-bold  border border-solid  text-white bg-[#073E29] border-[#073E29] transition-all mt-auto">
+                  Download Résumé
+                </a>
+              </div>
             </div>
           </div>
         </section>
