@@ -22,10 +22,10 @@ export class DataService {
             title: 'Projects',
             url: '/#projects'
         },
-        {
-            title: 'Reviews',
-            url: '/#reviews'
-        },
+        // {
+        //     title: 'Reviews',
+        //     url: '/#reviews'
+        // },
         {
             title: 'Contact',
             url: '/#contact'
