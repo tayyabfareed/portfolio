@@ -205,47 +205,59 @@ export class DataService {
 
     projects = [
         {
-            logo:'assets/images/projects/stemexe.png',
-            title:'StemeXe',
-            description:'StemeXe is a comprehensive digital engagement platform. Its versatility makes it ideal for just about any customer or employee engagement scenario. Reach out to us to learn more about how StemeXe can help your organization transform through amazing digital engagement experiences.',
-            url:'https://stemexe.com'
+            logo: 'assets/images/projects/stemexe.png',
+            title: 'StemeXe',
+            description: 'StemeXe is a comprehensive digital engagement platform. Its versatility makes it ideal for just about any customer or employee engagement scenario. Reach out to us to learn more about how StemeXe can help your organization transform through amazing digital engagement experiences.',
+            url: 'https://stemexe.com'
         },
         {
-            logo:'assets/images/projects/higher.png',
-            title:'Higher',
-            description:'Finding the right people for each position is key to the overall growth of your organization as wrong hires will have negative impacts. Higher is an online platform that tackles challenges faced by recruiters, interviewers, and managers during the recruitment process.',
-            url:'https://higher.exceeders.com'
+            logo: 'assets/images/projects/higher.png',
+            title: 'Higher',
+            description: 'Finding the right people for each position is key to the overall growth of your organization as wrong hires will have negative impacts. Higher is an online platform that tackles challenges faced by recruiters, interviewers, and managers during the recruitment process.',
+            url: 'https://higher.exceeders.com'
         },
         {
-            logo:'assets/images/projects/esp.png',
-            title:'ESP',
-            description:'Automation of business processes that involve processing of applications requires enhanced and secure approval validations. With ESP’s digital approval feature using ID verification and Face Recognition, companies are guaranteed that their business critical processes are handled securely and by the right channels.',
-            url:'https://esp.exceeders.com'
+            logo: 'assets/images/projects/esp.png',
+            title: 'ESP',
+            description: 'Automation of business processes that involve processing of applications requires enhanced and secure approval validations. With ESP’s digital approval feature using ID verification and Face Recognition, companies are guaranteed that their business critical processes are handled securely and by the right channels.',
+            url: 'https://esp.exceeders.com'
         },
         {
-            logo:'assets/images/projects/titikpintar.png',
-            title:'Titik Pintar',
-            description:'Titik Pintar is a fun edutainment mobile app where Your child can play while learning. Explore subjects that are more exciting and easy to understand with illustrations and animations!',
-            url:'https://titikpintar.com'
+            logo: 'assets/images/projects/titikpintar.png',
+            title: 'Titik Pintar',
+            description: 'Titik Pintar is a fun edutainment mobile app where Your child can play while learning. Explore subjects that are more exciting and easy to understand with illustrations and animations!',
+            url: 'https://titikpintar.com'
+        },
+        {
+            logo: 'assets/images/projects/gigmore.webp',
+            title: 'Gigmor',
+            description: 'Gigmor connects artists with local and national gigs and helps venues, individuals and event planners find and book talent for their events.',
+            url: 'https://gigmor.com'
+        },
+        {
+            logo: 'assets/images/projects/bondex.webp',
+            title: 'Bondex',
+            description: 'Bondex is a Web3 talent ecosystem combining a talent network & marketplace partly owned by its community of users. The first economically aligned talent marketplace for recruiters, talent and companies.',
+            url: 'https://bondex.app/'
         }
     ]
 
 
     reviews = [
         {
-          quote: "Tayyab's coding finesse brought our project to life—innovative solutions, timely delivery, and seamless collaboration. Outstanding work!",
-          person: "Sarah Thompson",
-          designation: "Project Manager at Exceeders"
+            quote: "Tayyab's coding finesse brought our project to life—innovative solutions, timely delivery, and seamless collaboration. Outstanding work!",
+            person: "Sarah Thompson",
+            designation: "Project Manager at Exceeders"
         },
         {
-          quote: "Kudos to Tayyab's development prowess! His creativity, precision, and commitment exceeded our expectations. A true asset to our team.",
-          person: "Alex Reynolds",
-          designation: "CEO at Boltech Solutions"
+            quote: "Kudos to Tayyab's development prowess! His creativity, precision, and commitment exceeded our expectations. A true asset to our team.",
+            person: "Alex Reynolds",
+            designation: "CEO at Boltech Solutions"
         },
         {
-          quote: "Impressed with Tayyab's full-stack wizardry! Meticulous, agile, and a pleasure to work with. Elevated our software to new heights.",
-          person: "David Miller",
-          designation: "CTO at Boltech Solutions"
+            quote: "Impressed with Tayyab's full-stack wizardry! Meticulous, agile, and a pleasure to work with. Elevated our software to new heights.",
+            person: "David Miller",
+            designation: "CTO at Boltech Solutions"
         }
-      ];
+    ];
 }
