@@ -160,6 +160,12 @@ export class DataService {
             icon: 'devicon-sequelize-plain colored'
         },
         {
+            title: 'Apache Kafka',
+            description: 'An open-source distributed event streaming platform used for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.',
+            url: 'https://kafka.apache.org/',
+            icon: 'devicon-apachekafka-original colored'
+        },
+        {
             title: 'Git',
             description: 'A distributed version control system for tracking changes in source code during software development.',
             url: 'https://git-scm.com/',
@@ -178,7 +184,7 @@ export class DataService {
             icon: 'devicon-nginx-original colored'
         },
         {
-            title: 'Amazon Web Services',
+            title: 'AWS (Amazon Web Services)',
             description: 'A comprehensive, evolving cloud computing platform provided by Amazon.',
             url: 'https://aws.amazon.com/',
             icon: 'devicon-amazonwebservices-plain-wordmark colored'
@@ -188,6 +194,12 @@ export class DataService {
             description: 'A messaging app for teams that makes it easy to communicate and collaborate.',
             url: 'https://slack.com/',
             icon: 'devicon-slack-plain colored'
+        },
+        {
+            title: 'Jira',
+            description: 'An issue and project tracking software developed by Atlassian, widely used for agile project management.',
+            url: 'https://www.atlassian.com/software/jira',
+            icon: 'devicon-jira-plain colored'
         },
         {
             title: 'SSH',
@@ -204,6 +216,12 @@ export class DataService {
     ];
 
     projects = [
+        {
+            logo: 'assets/images/projects/finn.svg',
+            title: 'FINN',
+            description: 'FINN offers a large suite of financial well-being products & services. The company manages and implements software products / services to provide employee welfare benefits to employers and their employees.',
+            url: 'https://www.finn-app.com/'
+        },
         {
             logo: 'assets/images/projects/stemexe.png',
             title: 'StemeXe',
@@ -226,7 +244,7 @@ export class DataService {
             logo: 'assets/images/projects/titikpintar.png',
             title: 'Titik Pintar',
             description: 'Titik Pintar is a fun edutainment mobile app where Your child can play while learning. Explore subjects that are more exciting and easy to understand with illustrations and animations!',
-            url: 'https://titikpintar.com'
+            url: 'https://titikpintar.id'
         },
         {
             logo: 'assets/images/projects/gigmore.webp',
@@ -239,7 +257,7 @@ export class DataService {
             title: 'Bondex',
             description: 'Bondex is a Web3 talent ecosystem combining a talent network & marketplace partly owned by its community of users. The first economically aligned talent marketplace for recruiters, talent and companies.',
             url: 'https://bondex.app/'
-        }
+        },
     ]
 
 

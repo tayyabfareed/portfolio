@@ -2,7 +2,8 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { delay, finalize, of, tap } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { finalize } from 'rxjs';
 import { DataService } from '../../common/services/data.service';
 @Component({
   selector: 'codevty',
@@ -13,6 +14,7 @@ import { DataService } from '../../common/services/data.service';
 })
 export class AppComponent {
   private readonly dataService = inject(DataService);
+  private readonly http = inject(HttpClient);
 
   tabs = this.dataService.tabs;
   skills = this.dataService.skills;
@@ -36,14 +38,19 @@ export class AppComponent {
       return;
     }
     this.submitting = true;
-    of(true).pipe(
-      delay(2000),
-      finalize(() => { this.submitting = false }),
-      tap(() => {
-        this.successMessage = 'Thanks for reaching out! I\'ll be in contact soon.'
+    
+    this.http.post('/api/contact', this.fg.value).pipe(
+      finalize(() => { this.submitting = false })
+    ).subscribe({
+      next: () => {
+        this.successMessage = 'Thanks for reaching out! I\'ll be in contact soon.';
         this.fg.reset();
-      })
-    ).subscribe()
+      },
+      error: (err) => {
+        console.error('Error sending message:', err);
+        alert('Failed to send message. Please try again later or contact me directly via email.');
+      }
+    });
   }
 
 

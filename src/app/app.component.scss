@@ -23,6 +23,10 @@
 
 }
 
+.tooltip:hover {
+    z-index: 10;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -42,6 +46,5 @@
 
 .custom-grid {
     grid-template-columns:repeat(auto-fit,80px);
-    overflow: hidden;
     gap: 1rem;
 }
