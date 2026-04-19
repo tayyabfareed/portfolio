@@ -1,3 +1,6 @@
 name = "portfolio"
 compatibility_date = "2024-04-19"
 pages_build_output_dir = "dist/portfolio/browser"
+
+[vars]
+CONTACT_EMAIL_TO = "to.tayyabfareed@gmail.com"
