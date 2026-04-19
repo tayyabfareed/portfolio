@@ -44,7 +44,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     if (!resendRes.ok) {
       const errorData = await resendRes.json();
       console.error('Resend API Error:', errorData);
-      return new Response(JSON.stringify({ error: 'Failed to send email.' }), {
+      return new Response(JSON.stringify({ error: 'Failed to send email.', details: errorData }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
       });
